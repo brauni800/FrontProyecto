@@ -17,7 +17,7 @@ header {
 
 .head_content_top {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     background-color: #00264e;
     height: 50%;
@@ -25,7 +25,7 @@ header {
 
 .head_content_top > label {
     font-size: 13px;
-    color: #879ca8;
+    color: white;
     padding-left: 25px;
 }
 
@@ -42,9 +42,6 @@ header {
 .head_content_bottom > a {
     width: 200px;
     height: 94%;
-    border-top: 3px solid rgba(213, 159, 0, 1);
-    border-right: 1px solid rgb(241, 196, 60);
-    border-left: 1px solid rgb(241, 196, 60);
 }
 
 .head_content_bottom > a > div {
@@ -53,7 +50,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #00264E;
+    color: white;
 }
 
 .head_content_bottom > a > div:hover {

@@ -40,6 +40,7 @@ header {
     align-items: center;
     background-color: #00264e;
     height: 50%;
+    text-align: center;
 }
 
 .head_content_top > label {
@@ -61,9 +62,6 @@ header {
 .head_content_bottom > a {
     width: 150px;
     height: 94%;
-    border-top: 3px solid rgba(213, 159, 0, 1);
-    border-right: 1px solid rgb(241, 196, 60);
-    border-left: 1px solid rgb(241, 196, 60);
 }
 
 .head_content_bottom > a > div {

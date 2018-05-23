@@ -14,7 +14,8 @@ footer > nav {
 
 footer > nav > a, footer > nav > label, footer p {
     padding: 0 10px;
-    color: #879ca8;
+    color: white;
+    text-align: center;
 }
 
 footer > nav > a:hover, footer > nav > label:hover {

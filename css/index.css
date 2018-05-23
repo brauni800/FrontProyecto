@@ -5,6 +5,8 @@ body {
     border: 0;
     font-family: 'Merriweather', serif;
 
+      overflow-x: hidden;
+
     /************************ Parallax effect *******************************/
     height: 500px;
     background-image: url('../img/fondo.jpg');

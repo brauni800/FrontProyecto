@@ -46,6 +46,7 @@ header {
 .head_content_top > label {
     color: white;
     padding-left: 25px;
+    text-align: center;
 }
 
 .head_content_bottom {
