@@ -1,0 +1,42 @@
+footer {
+    margin-top: 50px;
+    padding: 30px 0;
+    background-color: #00264E;
+    opacity: 0.9;
+}
+
+footer > nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer > nav > a, footer > nav > label, footer p {
+    padding: 0 10px;
+    color: #879ca8;
+}
+
+footer > nav > a:hover, footer > nav > label:hover {
+    color: white;
+}
+
+.contact_frame {
+    position: absolute;
+    bottom: 130px;
+    right: 100px;
+    display: none;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 11px;
+    width: 250px;
+    height: 150px;
+    background-color: #00264E;
+    z-index: 20;
+    opacity: 1;
+    border: 5px solid rgba(213, 159, 0, 1);
+    color: white !important;
+}

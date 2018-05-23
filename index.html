@@ -6,46 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>SICEI</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900" rel="stylesheet">
 
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900" rel="stylesheet">
     <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
     <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="./js/jquery.flexslider.js"></script>
-    <script type="text/javascript" charset="utf-8">
-        $(window).load(function () {
-            $('.flexslider').flexslider({
-                animation: "slide"
-            });
 
-            $('footer > nav > label').hover(function() {
-                $('.contact_frame').css('display', 'flex');
-            }, function() {
-                $('.contact_frame').css('display', 'none');
-            });
-
-            $('.documents_frame').hover(function() {
-                $('.documents_frame').css('background-color', '#FFCB4F');
-                $('.toggle_frame_documents').css('display', 'block');
-            }, function() {
-                $('.toggle_frame_documents').hover(null, function() {
-                    $('.documents_frame').css('background-color', 'rgb(180, 135, 0)');
-                    $('.toggle_frame_documents').css('display', 'none');
-                });
-            });
-
-            $('.services_frame').hover(function() {
-                $('.services_frame').css('background-color', '#FFCB4F');
-                $('.toggle_frame_services').css('display', 'block');
-            }, function() {
-                $('.toggle_frame_services').hover(null, function() {
-                    $('.services_frame').css('background-color', 'rgb(180, 135, 0)');
-                    $('.toggle_frame_services').css('display', 'none');
-                });
-            });
-        });
-    </script>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <script src="./js/carousel.js"></script>
+    <script src="./js/header.js"></script>
+    <script src="./js/footer.js"></script>
 </head>
 
 <body>
@@ -96,17 +69,17 @@
                         </a>
                     </div>
                     <div class="toggle_frame_services">
-                        <a href="#">
+                        <a href="./html/User.html">
                             <div>
                                 Atención a usuarios
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="./html/catalogo.html">
                             <div>
                                 Catálogo de servicios
                             </div>
                         </a>
-                        <a href="#">
+                        <a href="./html/tiempos.html">
                             <div>
                                 Tiempos de atención
                             </div>
