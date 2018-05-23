@@ -10,11 +10,20 @@
     <link href="https://fonts.googleapis.com/css?family=Merriweather:400,900" rel="stylesheet">
 
     <link rel="stylesheet" href="./css/flexslider.css" type="text/css">
+    <script src="./js/jquery-3.3.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
     <script src="./js/jquery.flexslider.js"></script>
     <script type="text/javascript" charset="utf-8">
         $(window).load(function () {
-            $('.flexslider').flexslider();
+            $('.flexslider').flexslider({
+                animation: "slide"
+            });
+
+            $('footer > nav > label').hover(function() {
+                $('.contact_frame').css('display', 'flex');
+            }, function() {
+                $('.contact_frame').css('display', 'none');
+            });
         });
     </script>
 </head>
@@ -30,7 +39,11 @@
                     <label>Sistema de información y Control Escolar Institucional</label>
                 </div>
                 <div class="head_content_bottom">
-                    Falta poner los botones aqui
+                    <a href="#">
+                        <div>
+                            Inicio
+                        </div>
+                    </a>
                 </div>
             </div>
         </header>
@@ -89,7 +102,38 @@
             </a>
         </div>
         <footer>
-
+            <nav>
+                <a href="#">
+                    Organización
+                </a>
+                <a href="#">
+                    FQA
+                </a>
+                <a href="#">
+                    Aviso de Privacidad
+                </a>
+                <label>
+                    Contacto
+                </label>
+                <div class="contact_frame">
+                    <p>
+                        Departamento de Información y Control Escolar Institucional
+                    </p>
+                    <p>
+                        Dir Anillo Periférico Norte, Tablaje Cat. 13615, Colonia Chuburná Hidalgo Inn, Mérida Yucatán.
+                    </p>
+                    <p>
+                        Tel.9423140 ext 1032
+                    </p>
+                </div>
+            </nav>
+            <div>
+                <p>
+                    © Todos los Derechos Reservados SICEI, UADY . Esta página puede ser reproducida con fines no lucrativos, siempre y cuando
+                    no se mutile, se cite la fuente completa y su dirección electrónica, de otra forma requiere permiso previo
+                    por escrito de la institución.
+                </p>
+            </div>
         </footer>
     </div>
 </body>
