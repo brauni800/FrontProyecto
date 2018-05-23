@@ -30,12 +30,12 @@
   height: 2px;
 }
 
-.categorias_content{
+.categorias_content, .tiempos_content{
   grid-column: 3/11;
   grid-row: 3;
 }
 
-.categorias{
+.categorias, .tiempos{
     marign: 32px 0;
 }
 
@@ -64,6 +64,28 @@
  td.desc > label{
    margin: 8px 0;
  }
+
+ .tiempos{
+   text-align: center;
+ }
+
+ .titulos{
+   font-weight: bold;
+   color: white;
+   background-color: #004388;
+   text-align: center;
+
+ }
+
+ .titulos > td{
+   padding: 8px;
+ }
+
+.izq{
+  width: 70%;
+  text-align: justify;
+
+}
 
  h2{
    padding-top: 16px 0;
