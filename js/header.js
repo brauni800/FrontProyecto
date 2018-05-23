@@ -1,4 +1,4 @@
-$(window).load(function () {
+$('document').ready(function () {
     $('.documents_frame').hover(function() {
         $('.documents_frame').css('background-color', '#FFCB4F');
         $('.toggle_frame_documents').css('display', 'block');

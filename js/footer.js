@@ -1,4 +1,4 @@
-$(window).load(function () {
+$('document').ready(function () {
     $('footer > nav > label').hover(function() {
         $('.contact_frame').css('display', 'flex');
     }, function() {
