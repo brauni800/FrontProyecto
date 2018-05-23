@@ -5,7 +5,6 @@ body {
     border: 0;
     font-family: 'Merriweather', serif;
 
-      overflow-x: hidden;
 
     /************************ Parallax effect *******************************/
     height: 500px;
@@ -14,6 +13,12 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media only screen and (max-device-width: 400px) {
+    body {
+        background-attachment: scroll;
+    }
 }
 
 a {
@@ -34,6 +39,7 @@ a {
 header + div {
     position: relative;
     width: 100%;
+    top: -44px;
 }
 
 .sicei_platforms {
@@ -51,7 +57,6 @@ header + div {
     font-weight: normal;
     background-color: #00264E;
     color: white;
-    border-radius: 8px;
     border-bottom: 5px solid rgba(213, 159, 0, 1);
     opacity: 0.9;
 }
