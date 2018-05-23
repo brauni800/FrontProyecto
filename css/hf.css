@@ -68,7 +68,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #00264E;
+    color: white;
 }
 
 .head_content_bottom > a > div:hover {
@@ -92,11 +92,13 @@ footer > nav {
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
+    text-align: center;
 }
 
 footer > nav > a, footer > nav > label, footer p {
     padding: 0 10px;
-    color: #879ca8;
+    color: white;
+    text-align: center;
 }
 
 footer > nav > a:hover, footer > nav > label:hover {
