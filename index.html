@@ -24,39 +24,103 @@
             }, function() {
                 $('.contact_frame').css('display', 'none');
             });
+
+            $('.documents_frame').hover(function() {
+                $('.documents_frame').css('background-color', '#FFCB4F');
+                $('.toggle_frame_documents').css('display', 'block');
+            }, function() {
+                $('.toggle_frame_documents').hover(null, function() {
+                    $('.documents_frame').css('background-color', 'rgb(180, 135, 0)');
+                    $('.toggle_frame_documents').css('display', 'none');
+                });
+            });
+
+            $('.services_frame').hover(function() {
+                $('.services_frame').css('background-color', '#FFCB4F');
+                $('.toggle_frame_services').css('display', 'block');
+            }, function() {
+                $('.toggle_frame_services').hover(null, function() {
+                    $('.services_frame').css('background-color', 'rgb(180, 135, 0)');
+                    $('.toggle_frame_services').css('display', 'none');
+                });
+            });
         });
     </script>
 </head>
 
 <body>
     <div class="content_body">
+
         <header>
             <div class="head_logo">
-                <img src="./img/header.png" alt="UADY">
+                <a href="http://www.uady.mx/">
+                    <img src="./img/header.png" alt="UADY">
+                </a>
             </div>
             <div class="head_content">
                 <div class="head_content_top">
                     <label>Sistema de información y Control Escolar Institucional</label>
                 </div>
                 <div class="head_content_bottom">
-                    <a href="#">
+                    <a href="index.html">
                         <div>
-                            Inicio
+                            <img src="./img/home.png" alt="Descarga"> &nbsp; Inicio
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" class="documents_frame">
                         <div>
-                            Documentación
+                            <img src="./img/imgpdf.png" alt="Descarga"> &nbsp; Documentación
                         </div>
                     </a>
-                    <a href="#">
+                    <a href="#" class="services_frame">
                         <div>
-                            Servicios
+                            <img src="./img/services.png" alt="Descarga"> &nbsp; Servicios
                         </div>
                     </a>
+                    <div></div>
+                    <div class="toggle_frame_documents">
+                        <a href="#">
+                            <div>
+                                Alumnos
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                Maestros
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                Administrativos
+                            </div>
+                        </a>
+                    </div>
+                    <div class="toggle_frame_services">
+                        <a href="#">
+                            <div>
+                                Atención a usuarios
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                Catálogo de servicios
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                Tiempos de atención
+                            </div>
+                        </a>
+                        <a href="#">
+                            <div>
+                                Políticas de servicio
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </header>
+
         <div>
             <div class="flexslider">
                 <ul class="slides">
@@ -72,6 +136,7 @@
                 </ul>
             </div>
         </div>
+
         <div class="sicei_platforms">
             <div class="platforms_title">
                 <label>Plataformas</label>
@@ -111,6 +176,7 @@
                 </div>
             </a>
         </div>
+
         <footer>
             <nav>
                 <a href="#">

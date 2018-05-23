@@ -5,7 +5,7 @@ body {
     border: 0;
     font-family: 'Merriweather', serif;
 
-    /* Parallax effect */
+    /************************ Parallax effect *******************************/
     height: 500px;
     background-image: url('../img/fondo.jpg');
     background-attachment: fixed;
@@ -24,6 +24,10 @@ a {
     margin-right: auto;
     max-width: 1360px;
 }
+
+/*****************************************************************************/
+/*********************************** Header **********************************/
+/*****************************************************************************/
 
 header {
     display: flex;
@@ -59,14 +63,15 @@ header {
 .head_content_bottom {
     background-color: rgb(180, 135, 0);
     height: 50%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100% auto;
+    justify-content: space-evenly;
+    z-index: 15;
 }
 
 .head_content_bottom > a {
-    width: 150px;
+    width: 200px;
     height: 94%;
     border-top: 3px solid rgba(213, 159, 0, 1);
     border-right: 1px solid rgb(241, 196, 60);
@@ -85,6 +90,40 @@ header {
 .head_content_bottom > a > div:hover {
     background-color: #FFCB4F;
 }
+
+.head_content_bottom img {
+    width: 1.5vw;
+}
+
+.toggle_frame_documents, .toggle_frame_services {
+    text-align: center;
+    background-color: rgb(180, 135, 0);
+    color: #00264E;
+}
+
+.toggle_frame_documents div, .toggle_frame_services div {
+    padding: 10px;
+}
+
+.toggle_frame_documents div:hover, .toggle_frame_services div:hover {
+    background-color: #FFCB4F;
+}
+
+.toggle_frame_documents {
+    display: none;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.toggle_frame_services {
+    display: none;
+    grid-column: 3;
+    grid-row: 2;
+}
+
+/*****************************************************************************/
+/************************************Plataformas******************************/
+/*****************************************************************************/
 
 header + div {
     position: relative;
@@ -147,6 +186,9 @@ header + div {
     margin-left: 10px;
 }
 
+/*****************************************************************************/
+/***************************************footer********************************/
+/*****************************************************************************/
 
 footer {
     margin-top: 50px;
